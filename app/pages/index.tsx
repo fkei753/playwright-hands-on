@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
       <div>
         <h1>ようこそ</h1>
-        <p>これはPlaywrightハンズオン用のサンプルアプリです。</p>
+        <p data-testid="welcome-text">これはPlaywrightハンズオン用のサンプルアプリです。</p>
       </div>
     </>
   )
