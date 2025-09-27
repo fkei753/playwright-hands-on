@@ -10,7 +10,7 @@ export default function LoginPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    router.push('/dashboard');
   };
 
   return (
@@ -30,6 +30,7 @@ export default function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 style={{ width: '100%', padding: '8px', marginTop: '4px' }}
+                name='email'
               />
             </label>
           </div>
@@ -42,6 +43,7 @@ export default function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 style={{ width: '100%', padding: '8px', marginTop: '4px' }}
+                name='password'
               />
             </label>
           </div>
